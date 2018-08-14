@@ -1,8 +1,8 @@
 # Moji Moji
 
-🐹Moji Moji is a ⚗️experimental 👥💬social 🌏🛰️networking 📱service 🔎focused on 🙂emoji.
+🐹Moji Moji is an ⚗️experimental 👥💬social 🌏🛰️networking 📱service 🔎focused on 🙂emoji.
 
-![planning](https://i.imgur.com/xXNx5JI.png)
+![planning](https://i.imgur.com/HDn0F1A.png)
 
 ## Available Scripts
 
