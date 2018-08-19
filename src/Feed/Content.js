@@ -15,10 +15,26 @@ const styles = StyleSheet.create({
 });
 
 export default class Content extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      cards: [{
+        author: 'lee.taeyoung',
+        content: 'lorem ipsum',
+        avatar: '👩‍🚀',
+      }],
+    };
+  }
+
   render() {
+    const { cards } = this.state;
+
     return (
       <ScrollView contentContainerStyle={styles.container}>
-        <Card />
+        {cards.map((c) => {
+          return <Card author={c.author} content={c.content} avatar={c.avatar} />;
+        })}
       </ScrollView>
     );
   }

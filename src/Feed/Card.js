@@ -5,6 +5,7 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   container: {
@@ -55,14 +56,26 @@ const styles = StyleSheet.create({
 });
 
 export default class Card extends React.Component {
+  static propTypes = {
+    author: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+  };
+
   render() {
+    const { author, content, avatar } = this.props;
+
     return (
       <View style={styles.container}>
         <View style={styles.headerContainer}>
-          <Text style={styles.headerText}>👩‍🚀 @lee.taeyoung</Text>
+          <Text style={styles.headerText}>
+            {avatar}
+            {' @'}
+            {author}
+          </Text>
         </View>
         <View style={styles.contentContainer}>
-          <Text style={styles.contentText}>{}</Text>
+          <Text style={styles.contentText}>{content}</Text>
         </View>
         <View style={styles.footerContainer}>
           <TouchableOpacity>
