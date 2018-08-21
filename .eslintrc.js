@@ -3,7 +3,6 @@ module.exports = {
     "parser": "babel-eslint",
     "rules": {
         "linebreak-style": 0,
-        "comma-dangle": 0,
         "class-methods-use-this": 0,
         "import/no-cycle": 0,
         "operator-linebreak": 0,
